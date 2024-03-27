@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project zero</title>
+    <meta name="description" content="Webdesign for Design Mayors">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="res/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" href="res/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+      div.main{max-width:1000px; min-height:100vh; margin: 0 auto; display:grid; grid-gap:10px; grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 1fr 200px; }
+      div.frame{background-color:#fee; padding:1em; }
+      div.header{grid-column-start:1; grid-column-end:3; }
+      div.footer{grid-column-start:1; grid-column-end:3; }
+
+    </style>
+  </head>
+  <body>
+
+  <div class="main">
+    <div class="frame header">Hello World 1</div>
+    <div class="frame">Hello Again 2</div>
+    <div class="frame">Hello World 3</div>
+    <div class="frame footer">Hello Again 4</div>
+  </div>
+
+  </body>
+</html>
