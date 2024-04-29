@@ -13,51 +13,87 @@
 <style>
 
   body {font-family:'Inter',sans-serif; margin:0; padding:0; font-size:clamp(12px, 2vw, 18px); background-color:rgb(255,255,255); color:rgb(0,0,0); }
-  div.main {max-width:60ch; margin:40px auto; padding:40px;}
+  div.main {max-width:90ch; margin:10px auto; padding:10px;}
 
   div.main p{font-size:0.95em; line-height:1.6em; margin-bottom:1.4em; color:rgb(17,111,133); text-align:right; }
-  div.main h1{font-size:01.7em; line-height:1.6em; margin-bottom:1.4em; color:rgb(17,111,133); text-align:center; }
+  div.opener h1{font-size:01.7em; line-height:1.6em; margin-bottom:1.4em; color:rgb(17,111,133); text-align:center; padding:5vh; }
   div.main h2{font-size:1.3em; line-height:1.6em; margin-bottom:1.4em; color:rgb(40,194,230); text-align:right; }
   div.main h3{font-size:1.3em; line-height:1.6em; margin-bottom:1.4em; color:rgb(40,194,230); text-align:left; }
   div.main h4{font-size:0.95em; line-height:1.6em; margin-bottom:1.4em; color:rgb(17,111,133); text-align:left; }
 
-  div.main img.image{max-width:100%; max-height:30vh; object-fit:contain; object-position:top center; }
+  img{width:100%; }
+
+
+  /*div.main {display:grid; grid-column-start: 3; grid-column-end: 3;
+  grid-row-start: 3; grid-row-end: 3;  }*/
+
+  div.main {display: grid; grid-template-columns: 1fr 1fr; }
+  div.main1 {max-width:40ch; margin:10px; padding:10px; }
+
+  div.main img.example{max-width:40ch; width:100%; align-self:center; }
+
 
 </style>
 </head>
 <body>
 
-  <div class="main">
+<a href="#contact">contact</a>
 
 <img class="image" src="res/logo.svg">
 
-    <h1>Welcome To Toelke Designs!<br>
-        Below are a few examples of my works<br>
-        and ways to contact me if you are interested.</h1>
+<div class="opener">
+  <h1>Welcome To Toelke Designs!<br>
+      Below are a few examples of my works<br>
+      and ways to contact me if you are interested.</h1>
+</div>
 
-        <h2>Album Cover Design</h2>
+  <div class="main">
+
+    <div class="main1">
+        <h2>Album Cover Design</h2><br>
 
           <p>For this project I was able to select the artist and music. I felt this album deserved a personal connection to reality, so I wanted to capture my design in an image rather than making it digitally. The melancholy tone reflects the title and related song. It is a cry for help. The water droplets reflects the word cry allowing them to become tears when the viewer translates the image in their mind.<br><br>
 
 To create this image I used water droplets on plastic over a pan and a paint brush. It took many hours to manipulate the water into the forms and letters, but worked out very effectively. Next I put the image in photoshop and brought out the blues and grays to really set that mood. On the back I muted the same design to keep the cover unified while also giving the text on the back readability.<br><br>
 
 I am very happy with how this design turned out and I feel like it perfectly captures the album and song.</p>
+    </div>
 
-        <h3>App & Icon Design</h3>
+    <div class="main1">
+      <img class="example" src="res/Album Front.jpg"><br>
+      <img class"example" src="res/Album Back.jpg">
+    </div>
+
+    <div class="main1">
+      <img class="example" src="res/example two top.jpg"><br>
+      <img class"example" src="res/example two bottom.jpg">
+    </div>
+
+    <div class="main1">
+        <h3>App & Icon Design</h3><br>
 
           <h4>For this project the goal was to design an app to help people identify venomous animals in Missouri. I made the logo out of snake fangs into a “v” for venomous to interconnect this ideology. The really fun part of designing this however, was making the icons.<br><br>
 
 They went through multiple redesigns as I wanted to identify their recognizable features, while also making it simple and easier to remember. I landed on a design that used very little detail and few colors. Having all of them include black and sometimes blue to interconnect them with the apps logo and background interface.<br><br>
 
 This design is very successful in meeting the desired outcome from its conception. Its simple, helpful, and easy to remember.</h4>
+    </div>
 
-        <h2>Book Cover Design</h2>
+    <div class="main1">
+        <h2>Book Cover Design</h2><br>
 
           <p>This project’s goal was to create a cover that accurately represented the contents of the book. The book is the urban history of Springfield Missouri. With this in mind, and my experience growing up there I knew exactly what to do for the design.<br><br>
 
 Naturally I included Missouri with a star showing Springfield’s location inside of it. That star reflects the other major icon in the design which along with the color scheme comes from the Springfield city flag. Lastly I incorporated a skyline that shows the history and diversity of the city. It includes famous buildings, airports, a train, some urban residences, and a farm. This cover perfectly encapsulates Springfield, the contents of the book, and draws the reader in to learn more about the history of the city.</p>
+    </div>
+
+    <div class="main1">
+      <img class="example" src="res/book cover.jpg">
+    </div>
 
   </div>
+
+<a id="contact"></a>
 
 </body>
 </html>
