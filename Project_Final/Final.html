@@ -30,18 +30,19 @@
 
   div.main img.example{max-width:40ch; width:100%; align-self:center; }
 
-  div.bottom {display: grid; grid-template-columns: 1fr 1fr 1fr; background-color:rgb(40,194,230); padding:25px 20%; }
+  div.bottom {display: grid; grid-template-columns: 1fr 1fr 1fr; background-color:rgb(40,194,230); padding:25px calc(50% - 400px); }
   div.bottom a{display:block; align-self:center; justify-self:center; text-align: center; text-decoration: none;}
   div.bottom img.link{width:32px; margin: 0 auto; }
   div.bottom div {text-align:center; font-size:0.8em;  color:white; }
 
-  div.hero {height:100vh; position:relative; background-color:#28C2E6; }
-  div.hero img{position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%); width:50%; }
+  div.hero {height:50vh; position:relative; background-color:#28C2E6; overflow: clip; }
+  div.hero img{position: absolute; top:50%; left: 50%; transform:translate(-50%,-50%); width:50%; height:80%; object-fit:contain; }
 
-  div.stay {position: fixed; display: grid; grid-template-columns: 1fr 1fr; background-color: rgb(17,111,133); padding: 25px 20%; }
-  div.stay a{position:absolute; top:13px; right:20px; display:block; text-decoration: none; padding:0.5em 2em;
-    font-size:0.6em; border:1px solid white; border-radius:10px; color:white; }
-  div.stay img{width:11vh; margin: 0 auto; position:absolute; top:8px; left:20px; }
+  div.stay {display: grid; grid-template-columns: 1fr 1fr; z-index:5; position: fixed;
+    background-color: rgb(17,111,133); width:100%; }
+  div.stay a{display:inline-block; text-decoration: none; padding:0.5em 2em; margin:10px;
+    font-size:0.6em; border:1px solid white; border-radius:10px; color:white; justify-self: flex-end; align-self:center; }
+  div.stay img{width:11vh; align-self:flex-start; margin:10px; }
 
 </style>
 </head>
